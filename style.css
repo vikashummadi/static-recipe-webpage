@@ -1,0 +1,101 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+}
+h1,h2{
+  font-family: "Young Serif", serif;
+}
+.main{
+  width: 650px;
+  height: fit-content;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 50px;
+}
+img{
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 20px;
+}
+.preparation{
+  border-radius: 10px;
+  background-color: hsl(330, 100%, 98%);
+  height: 150px;
+  padding: 10px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+li{
+  margin-left:15px;
+  padding-left:10px;
+  line-height: 30px;
+}
+.ingredients ,.instructions,.nutritions{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 20px 0 20px 0;
+}
+.ingredients{
+  height: 220px;
+}
+.instructions{
+  height: 400px;
+}
+.nutritions{
+  line-height: 40px;
+}
+.attribution, a{
+  text-align: center;
+  font-family: cursive;
+  text-decoration: none;
+
+}
+p{
+  margin: 20px 0 20px 0;
+}
+h2{
+  color: hsl(14, 45%, 36%);
+  font-size: 28px;
+  font-weight: 400;
+}
+li,p,h3,td{
+  font-family: "Outfit", sans-serif;
+}
+b{
+  color: hsl(24, 5%, 18%);
+}
+ol li::marker{
+  color:hsl(14, 45%, 36%);
+}
+
+@media (150px <= width <= 740px) {
+  .main{
+    margin: 0px;
+    padding: 0px;
+    width: inherit;
+    border-radius: 0px;
+    height: fit-content;
+  }
+  img{
+    border-radius: 0px;
+    width: 100%;
+  }
+  h1,.discription ,.preparation,.ingredients,.instructions,.nutritions{
+    padding: 0 20px 0 20px;
+  } 
+  .preparation{
+    margin: 0 10px 0 20px;
+  }
+  .instructions{
+    height: min-content;
+  }
+}
